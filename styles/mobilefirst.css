@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.limited-width {
+  max-width: 1024px;
+  display: flex;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #fff;
+}
+header .limited-width {
+  padding: 20px;
+  gap: 20px;
+  align-items: center;
+}
+header .limited-width img {
+  width: 40px;
+}
+header .limited-width h1 {
+  color: rgb(96, 48, 209);
+  font-size: 1.4rem;
+}
+
+main {
+  min-height: 90vh;
+  background-color: #dadada;
+}
+main .limited-width {
+  padding: 50px 20px;
+}
+main .form-container {
+  background: no-repeat url("../images/bahia.jpg") top center;
+  background-size: cover;
+}
+main .form-container .limited-width {
+  flex-direction: column;
+}
+main .form-container .limited-width p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: rgb(96, 48, 209);
+  padding: 5px 0px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+main .form-container .limited-width p img {
+  width: 30px;
+  transform: rotateZ(-40deg);
+}
+main .form-container .limited-width form {
+  background-color: #fff;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .form-container .limited-width form .dados-pessoais, main .form-container .limited-width form .dados-viagem, main .form-container .limited-width form .dados-quarto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .form-container .limited-width form .dados-pessoais label, main .form-container .limited-width form .dados-pessoais h3, main .form-container .limited-width form .dados-viagem label, main .form-container .limited-width form .dados-viagem h3, main .form-container .limited-width form .dados-quarto label, main .form-container .limited-width form .dados-quarto h3 {
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+main .form-container .limited-width form .dados-pessoais input, main .form-container .limited-width form .dados-pessoais select, main .form-container .limited-width form .dados-viagem input, main .form-container .limited-width form .dados-viagem select, main .form-container .limited-width form .dados-quarto input, main .form-container .limited-width form .dados-quarto select {
+  padding: 10px;
+}
+main .form-container .limited-width form .dados-pessoais aside label, main .form-container .limited-width form .dados-viagem aside label, main .form-container .limited-width form .dados-quarto aside label {
+  margin-left: 10px;
+}
+main .form-container .limited-width form button {
+  background-color: rgb(96, 48, 209);
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 15px;
+  transition: 1s;
+}
+main .form-container .limited-width form button:hover {
+  scale: 1.02;
+}
+main .ofertas {
+  flex-direction: column;
+  gap: 20px;
+}
+main .ofertas .text h2 {
+  margin-bottom: 10px;
+}
+main .ofertas .images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .ofertas .images figure {
+  position: relative;
+}
+main .ofertas .images figure img {
+  width: calc(100vw - 40px);
+}
+main .ofertas .images figure legend {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.582);
+  color: #fff;
+  padding: 5px 10px;
+  position: absolute;
+  bottom: 3px;
+}
+main .ofertas .cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .ofertas .cards-container .card img {
+  width: 100%;
+}
+main .ofertas .cards-container .card .text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 2px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+footer {
+  background-color: rgb(96, 48, 209);
+  padding: 20px;
+}
+footer .limited-width {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+}
+footer .limited-width aside {
+  width: 100%;
+  padding: 0 25%;
+}
+footer .limited-width aside section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+footer .limited-width aside h2 {
+  margin-bottom: 25px;
+}
+footer .limited-width aside p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.8rem;
+}
+footer .limited-width aside p img {
+  width: 20px;
+}/*# sourceMappingURL=mobilefirst.css.map */

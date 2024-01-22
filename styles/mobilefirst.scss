@@ -1,0 +1,214 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.limited-width {
+    max-width: 1024px;
+    display: flex;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #fff;
+
+    .limited-width {
+        padding: 20px;
+        gap: 20px;
+
+        align-items: center;
+
+        img {
+            width: 40px;
+        }
+
+        h1 {
+            color: rgb(96, 48, 209);
+            font-size: 1.4rem;
+        }
+    }
+}
+
+main {
+    min-height: 90vh;
+    background-color: #dadada;
+    
+    .limited-width {
+        padding: 50px 20px;
+    }
+
+    .form-container {
+        background: no-repeat url('../images/bahia.jpg') top center;
+        background-size: cover;
+
+        .limited-width {
+            flex-direction: column;
+
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+                background-color: rgb(96, 48, 209);
+                padding: 5px 0px;
+
+                font-size: 1.2rem;
+                color: #fff;
+
+                img {
+                    width: 30px;
+                    transform: rotateZ(-40deg);
+                }
+            }
+
+            form {
+                background-color: #fff;
+
+                padding: 20px 15px;
+
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .dados-pessoais, .dados-viagem, .dados-quarto{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    label, h3 {
+                        font-size: 1.3rem;
+                        font-weight: lighter;
+                    }
+
+                    input, select {
+                        padding: 10px;
+                    }
+
+                    aside label {
+                        margin-left: 10px;
+                    }
+
+                }
+
+                button {
+                    background-color: rgb(96, 48, 209);
+                    border: none;
+
+                    color: #fff;
+                    font-size: 1.2rem;
+
+                    padding: 15px;
+
+                    transition: 1s;
+
+                    &:hover {
+                        scale: 1.02;
+                    }
+                }
+            }
+        }
+    }
+
+    .ofertas {
+        flex-direction: column;
+        gap: 20px;
+
+        .text h2 {
+            margin-bottom: 10px;
+        }
+
+        .images {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+           
+            figure {
+                position: relative;
+
+                img {
+                    width: calc((100vw/1) - 40px);
+                }
+
+                legend {
+                    width: 100%;
+                    background-color: rgba(0, 0, 0, 0.582);
+                    color: #fff;
+    
+                    padding: 5px 10px;
+
+                    position: absolute;
+                    bottom: 3px;
+                }
+            }
+
+        }
+
+        .cards-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .card {
+                img {
+                    width: 100%;
+                }
+
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    margin-top: 2px;
+                    background-color: #fff ;
+
+                    padding: 20px;
+                }
+            }
+        }
+    }
+    
+}
+
+footer {
+    background-color: rgb(96, 48, 209);
+
+    padding: 20px;
+
+    .limited-width {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        color: #fff;
+
+        aside {
+            width: 100%;
+            padding: 0 25%;
+
+            section {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+    
+            h2 {
+                margin-bottom: 25px;
+            }
+    
+            p {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                font-size: .8rem;
+    
+                img {
+                    width: 20px;
+                }
+            }
+        }
+
+    }
+}
