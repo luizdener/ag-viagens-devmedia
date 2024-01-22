@@ -77,6 +77,10 @@ main {
                     flex-direction: column;
                     gap: 20px;
 
+                    label, select, aside input {
+                        cursor: pointer;
+                    }
+
                     label, h3 {
                         font-size: 1.3rem;
                         font-weight: lighter;
@@ -102,6 +106,7 @@ main {
                     padding: 15px;
 
                     transition: 1s;
+                    cursor: pointer;
 
                     &:hover {
                         scale: 1.02;
@@ -125,10 +130,11 @@ main {
             gap: 10px;
            
             figure {
+                width: 100%;
                 position: relative;
 
                 img {
-                    width: calc((100vw/1) - 40px);
+                    width: 100%;
                 }
 
                 legend {

@@ -66,6 +66,9 @@ main .form-container .limited-width form .dados-pessoais, main .form-container .
   flex-direction: column;
   gap: 20px;
 }
+main .form-container .limited-width form .dados-pessoais label, main .form-container .limited-width form .dados-pessoais select, main .form-container .limited-width form .dados-pessoais aside input, main .form-container .limited-width form .dados-viagem label, main .form-container .limited-width form .dados-viagem select, main .form-container .limited-width form .dados-viagem aside input, main .form-container .limited-width form .dados-quarto label, main .form-container .limited-width form .dados-quarto select, main .form-container .limited-width form .dados-quarto aside input {
+  cursor: pointer;
+}
 main .form-container .limited-width form .dados-pessoais label, main .form-container .limited-width form .dados-pessoais h3, main .form-container .limited-width form .dados-viagem label, main .form-container .limited-width form .dados-viagem h3, main .form-container .limited-width form .dados-quarto label, main .form-container .limited-width form .dados-quarto h3 {
   font-size: 1.3rem;
   font-weight: lighter;
@@ -83,6 +86,7 @@ main .form-container .limited-width form button {
   font-size: 1.2rem;
   padding: 15px;
   transition: 1s;
+  cursor: pointer;
 }
 main .form-container .limited-width form button:hover {
   scale: 1.02;
@@ -100,10 +104,11 @@ main .ofertas .images {
   gap: 10px;
 }
 main .ofertas .images figure {
+  width: 100%;
   position: relative;
 }
 main .ofertas .images figure img {
-  width: calc(100vw - 40px);
+  width: 100%;
 }
 main .ofertas .images figure legend {
   width: 100%;
