@@ -1,0 +1,15 @@
+@media screen and (min-width: 541px) and (max-width: 768px) {
+    main .form-container .limited-width form .dados-viagem{
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        aside {
+            width: calc((100%/2) - 10px);
+        }
+    }
+
+    main .form-container .limited-width form .dados-quarto section {
+        flex-direction: row;
+        gap: 45px;
+    }
+}

@@ -72,7 +72,7 @@ main {
                 flex-direction: column;
                 gap: 20px;
 
-                .dados-pessoais, .dados-viagem, .dados-quarto{
+                .dados-pessoais, .dados-viagem, .dados-quarto, .dados-quarto section{
                     display: flex;
                     flex-direction: column;
                     gap: 20px;
@@ -94,6 +94,16 @@ main {
                         margin-left: 10px;
                     }
 
+                }
+
+                .dados-viagem aside {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    label {
+                        margin-left: 0;
+                    }
                 }
 
                 button {
@@ -124,17 +134,21 @@ main {
             margin-bottom: 10px;
         }
 
-        .images {
+        .images, .images aside {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 15px;
            
             figure {
                 width: 100%;
+                height: 225px;
                 position: relative;
 
                 img {
                     width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
                 }
 
                 legend {
@@ -145,7 +159,7 @@ main {
                     padding: 5px 10px;
 
                     position: absolute;
-                    bottom: 3px;
+                    bottom: 0px;
                 }
             }
 
@@ -190,8 +204,8 @@ footer {
         color: #fff;
 
         aside {
-            width: 100%;
-            padding: 0 25%;
+            width: 250px;
+
 
             section {
                 display: flex;

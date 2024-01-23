@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agência de Viagens</title>
     <link rel="stylesheet" href="styles/mobilefirst.css">
+    <link rel="stylesheet" href="styles/middevices.css">
+    <link rel="stylesheet" href="styles/highdevices.css">
 </head>
 <body>
     <header>
@@ -20,7 +22,7 @@
             <div class="limited-width">
                 <p><img src="images/aviao.png" alt=""> Solicite um orçamento</p>
 
-                <form action="" method="post">
+                <form action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/" method="post">
                     
                     <h2>Informe seus dados</h2>
 
@@ -36,59 +38,71 @@
                     </div>
 
                     <div class="dados-viagem">
-                        <label for="idata-ida">Data da ida</label>
-                        <input type="date" name="data-ida" id="idata-ida" required>
+                        <aside>
+                            <label for="idata-ida">Data da ida</label>
+                            <input type="date" name="partida" id="idata-ida" required>
+                        </aside>
 
-                        <label for="idata-volta">Data da volta</label>
-                        <input type="date" name="data-volta" id="idata-volta" required>
+                        <aside>
+                            <label for="idata-volta">Data da volta</label>
+                            <input type="date" name="chegada" id="idata-volta" required>
+                        </aside>
                         
-                        <label for="iorigem">Origem</label>
-                        <select name="origem" id="iorigem">
-                            <option value="">Partindo de</option>
-                            <option value="RJ">Rio de Janeiro </option>
-                        </select>
+                        <aside>
+                            <label for="iorigem">Origem</label>
+                            <select name="origem" id="iorigem">
+                                <option value="">Partindo de</option>
+                                <option value="RJ">Rio de Janeiro </option>
+                            </select>
+                        </aside>
 
-                        <label for="idestino">Destino</label>
-                        <select name="destino" id="idestino">
-                            <option value="">Indo para</option>
-                            <option value="Ba">Bahia</option>
-                        </select>
+                        <aside>
+                            <label for="idestino">Destino</label>
+                            <select name="destino" id="idestino">
+                                <option value="">Indo para</option>
+                                <option value="Ba">Bahia</option>
+                            </select>
+                        </aside>
                     </div>
 
                     <div class="dados-quarto">
                         <h3>Quarto com cama infantil?</h3>
 
-                            <aside>
-                                <input type="radio" name="cama" id="icama-sim">
-                                <label for="icama-sim">Sim</label>
-                            </aside>
+                            <section>
+                                <aside>
+                                    <input type="radio" name="infantil" id="icama-sim">
+                                    <label for="icama-sim">Sim</label>
+                                </aside>
 
-                            <aside>
-                                <input type="radio" name="cama" id="icama-nao">
-                                <label for="icama-nao">Não</label>
-                            </aside>
+                                <aside>
+                                    <input type="radio" name="infantil" id="icama-nao">
+                                    <label for="icama-nao">Não</label>
+                                </aside>
+                            </section>
                         
                         <h3>Preferências da hospedagem</h3>
                         
-                            <aside>
-                                <input type="checkbox" name="preferencias[]" id="ipiscina" value="piscina">
-                                <label for="ipiscina">Piscina</label>
-                            </aside>
+                            <section>
+                                <aside>
+                                    <input type="checkbox" name="preferencias[]" id="ipiscina" value="piscina">
+                                    <label for="ipiscina">Piscina</label>
+                                </aside>
 
-                            <aside>
-                                <input type="checkbox" name="preferencias[]" id="iwifi" value="wifi">
-                                <label for="iwifi">Wi-Fi</label>
-                            </aside>
+                                <aside>
+                                    <input type="checkbox" name="preferencias[]" id="iwifi" value="wifi">
+                                    <label for="iwifi">Wi-Fi</label>
+                                </aside>
 
-                            <aside>
-                                <input type="checkbox" name="preferencias[]" id="igaragem" value="garagem">
-                                <label for="igaragem">Garagem</label>
-                            </aside>
+                                <aside>
+                                    <input type="checkbox" name="preferencias[]" id="igaragem" value="garagem">
+                                    <label for="igaragem">Garagem</label>
+                                </aside>
 
-                            <aside>
-                                <input type="checkbox" name="preferencias[]" id="isuite" value="suite">
-                                <label for="isuite">Suite</label>
-                            </aside>
+                                <aside>
+                                    <input type="checkbox" name="preferencias[]" id="isuite" value="suite">
+                                    <label for="isuite">Suite</label>
+                                </aside>
+                            </section>
                     </div>
 
                     <button type="submit">Solicitar orçamento</button>
@@ -103,26 +117,29 @@
             </section>
 
             <section class="images">
-                <figure>
+                <figure class="img-destaque">
                     <img src="images/rio.jpg" alt="">
                     <legend>Rio de Janeiro</legend>
                 </figure>
-                <figure>
-                    <img src="images/manaus.jpg" alt="">
-                    <legend>Manaus</legend>
-                </figure>
-                <figure>
-                    <img src="images/niteroi.jpg" alt="">
-                    <legend>Rio de Janeiro</legend>
-                </figure>
-                <figure>
-                    <img src="images/saopaulo.jpg" alt="">
-                    <legend>São Paulo</legend>
-                </figure>
-                <figure>
-                    <img src="images/maranhao.jpg" alt="">
-                    <legend>Maranhão</legend>
-                </figure>
+
+                <aside>
+                    <figure>
+                        <img src="images/manaus.jpg" alt="">
+                        <legend>Manaus</legend>
+                    </figure>
+                    <figure>
+                        <img src="images/niteroi.jpg" alt="">
+                        <legend>Rio de Janeiro</legend>
+                    </figure>
+                    <figure>
+                        <img src="images/saopaulo.jpg" alt="">
+                        <legend>São Paulo</legend>
+                    </figure>
+                    <figure>
+                        <img src="images/maranhao.jpg" alt="">
+                        <legend>Maranhão</legend>
+                    </figure>
+                </aside>
                 
             </section>
 
