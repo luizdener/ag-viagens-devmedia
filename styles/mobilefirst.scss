@@ -97,12 +97,17 @@ main {
                 }
 
                 .dados-viagem aside {
+                    width: 100%;
                     display: flex;
                     flex-direction: column;
                     gap: 20px;
 
                     label {
                         margin-left: 0;
+                    }
+
+                    input {
+                        width: 100%;
                     }
                 }
 
