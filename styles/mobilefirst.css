@@ -80,12 +80,16 @@ main .form-container .limited-width form .dados-pessoais aside label, main .form
   margin-left: 10px;
 }
 main .form-container .limited-width form .dados-viagem aside {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 main .form-container .limited-width form .dados-viagem aside label {
   margin-left: 0;
+}
+main .form-container .limited-width form .dados-viagem aside input {
+  width: 100%;
 }
 main .form-container .limited-width form button {
   background-color: rgb(96, 48, 209);
